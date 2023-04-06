@@ -1,18 +1,19 @@
-
-import NavBar from "../components/navbar/NavBar"
-import "./home.scss"
+import "./home.scss";
+import Navbar from "../components/navbar/Navbar";
+import Featured from "../components/featured/Featured";
+import List from "../components/list/List";
 
 const Home = () => {
   return (
-    <div className='home'>
-        <NavBar/>
-        <img
-        width="100%"
-        
-            src="https://e0.pxfuel.com/wallpapers/221/786/desktop-wallpaper-%DC%9380-nature-beautiful-cool-android-iphone-background-png-jpg-2022-nature-android.jpg"
-            alt="" />
+    <div className="home">
+      <Navbar />
+      <Featured type="movie" />
+      <List />
+      <List />
+      <List />
+      <List />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

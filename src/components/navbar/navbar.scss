@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     z-index: 999;
-    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.2) 50%);
 
     &.scrolled {
         background-color: var(--main-color);
@@ -23,19 +23,23 @@
             align-items: center;
 
             img {
-                height: 25px;
+                height: 35px;
                 margin-right: 40px;
+                filter: drop-shadow(2px 2px 2px black);
             }
 
             span {
-                margin-right: 20px;
-                cursor: pointer
+                margin-right: 25px;
+                font-size: 1em;
+                cursor: pointer;
+                filter: drop-shadow(2px 2px 2px black);
             }
         }
 
         .right {
             display: flex;
             align-items: center;
+            filter: drop-shadow(2px 2px 2px black);
 
             .icon {
                 margin: 0px 15px;
@@ -54,6 +58,7 @@
                 .options {
                     display: none;
                     background-color: var(--main-color);
+
                 }
 
                 span {
@@ -68,10 +73,7 @@
                         position: absolute;
                     }
                 }
-
-
             }
         }
     }
-
 }
